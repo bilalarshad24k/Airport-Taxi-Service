@@ -28,7 +28,7 @@ body{
     font-weight:800;
     color:#000733;
     font-size:20px;
-    text-alignment:left;
+    text-align:left;
     padding:0 10px;
 }
 .navigationBar{
@@ -211,7 +211,7 @@ input:focus::placeholder{
     /*flex-basis:22%;*/
    /* width:calc(20%-10px);*/
   /* margin:10px 0px;*/
-  width:25%;a
+  width:25%;
 }
 .dateNtime{
     display:flex;
@@ -480,8 +480,6 @@ input[type="time"]:before , input[type="date"]:before{
     left:37%;
     bottom:8%;
     
-}
-.dot{
 }
 .dot,.dotm{
     display:inline-block;
