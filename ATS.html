@@ -48,6 +48,7 @@
                     <h2>Book Now</h2>
                     <div class="inputBox pickup">
                         <i class="icon fa fa-map-marker" aria-hidden="true"></i>
+                        <label for="fromLoc">PickUp:</label>
                         <input type="text" class="inputField" id="fromLoc" name="fromLoc" placeholder="PickUp point">
                     </div>
                     <div class="inputBox Xchangeholder">
@@ -56,12 +57,14 @@
                   
                     <div class="inputBox dropOff">
                         <i class="icon fa fa-map-marker" aria-hidden="true"></i>
+                        <label for="toLoc">Destination:</label>
                         <input type="text" class="inputField" id="toLoc" name="toLoc" placeholder="Destination point">
                     </div>
                     <div class="FPL">
                         <div class="inputBox Fleet">
                             <i class="fa fa-car icon" aria-hidden="true"></i>
-                            <select class="inputField" name="fleet" id="fleet">
+                            <label for="fleet">Fleet:</label>
+                            <select class="inputField" name="fleet" id="carFleet">
                             <option value="Economy">Economy</option>
                             <option value="Average">Average</option>
                             <option value="Luxury">Luxury</option>
@@ -69,21 +72,25 @@
                         </div>
                         <div class="inputBox passngr">
                             <i class="fa fa-user icon" aria-hidden="true"></i>
+                            <label for="passenger">Passengers:</label>
                             <input class="inputField" type="number"placeholder="0" id="Passngr"name="passenger" min="1" max="5">
                         </div>
                         <div class="inputBox lugg">
                             <i class="fa fa-suitcase icon" aria-hidden="true"></i>
+                            <label for="luggage">Luggage:</label>
                             <input class="inputField" placeholder="0" type="number" id="Luggage" name="luggage" min="1" max="30">
                         </div>
                     </div>
                     <div class="dateNtime">
                         <div class="inputBox date">
                             <i class="fa fa-calendar icon" aria-hidden="true"></i>
-                            <input class="inputField" type="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                            <label for="date">Date:</label>
+                            <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
                         </div>
                         <div class="inputBox time">
                             <i class="fa fa-clock-o icon" aria-hidden="true"></i>
-                            <input class="inputField" type="time" value="12:00">
+                            <label for="time">Time:</label>
+                            <input class="inputField" type="time" name="time" value="12:00">
                         </div>
                     </div>
                     <div class="inputBox switchButton">
@@ -96,11 +103,13 @@
                     <div class="dateNtime">
                         <div class="inputBox date">
                             <i class="fa fa-calendar icon" aria-hidden="true"></i>
-                            <input class="inputField" type="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                            <label for="date">Date:</label>
+                            <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
                         </div>
                         <div class="inputBox time">
                             <i class="fa fa-clock-o icon" aria-hidden="true"></i>
-                            <input class="inputField" type="time" value="12:00">
+                            <label for="time">Time:</label>
+                            <input class="inputField" type="time" name="time" value="12:00">
                         </div>
                     </div>
                     <div class="inputBox buttons">
@@ -155,20 +164,24 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p></br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra maximus auctor. Nullam dignissim pretium leo quis vulputate. Ut non gravida ligula. Duis quis condimentum eros. Aenean enim urna, ultricies in lacus in, bibendum gravida elit. Nam tempor, neque a vulputate consectetur, est sem tempor diam, eget rhoncus elit nulla.</p>
             </div>
-            <div class="fleet">
+            <div class="ourFleet">
                 <h1>Our Fleet</h1>
                 <img src="Media/NoPath - Copy (6).png" alt="Car Image" width="350px">
                 <p><span style="color:#000733; font-weight:600;">Executive Car:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed magna eleifend imperdiet. Proin vestibulum ipsum sit amet orci facilisis, vitae cursus turpis semper. Nam ut vestibulum lacus, in elementum leo.  </p>
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-                <div class="navDot">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                <div class="navArrows">
+                      <i class="fas fa-chevron-left"></i>
+                      <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="paginationButtons">
+                    <div class="navDot">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
                 </div>
                 <img class="ring ring1" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
                 <img class="ring ring2" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
@@ -192,10 +205,7 @@
                 <li class="footMenu"><a href="#">Towns</a></li>
                 <li class="footMenu"><a href="#">Usage Policy</a></li>
                 <li class="footMenu"><a href="#">Drivers</a></li>
-
                 <li class="footMenu"><a href="#">Cookie Policy</a></li>
-
-                
             </ul>
         </div>
     </body>
