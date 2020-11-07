@@ -410,9 +410,9 @@ input[type="time"]:before , input[type="date"]:after{
 .infBox img{
     width:35px;
 }
-/*.infBox:nth-child(4) img{
-    width:40px;
-}*/
+.infBox:nth-child(4) img{
+    width:28px;
+}
 .infBox h2{
     font-family:Roboto,Arial, sans-serif;
     font-weight:600;
