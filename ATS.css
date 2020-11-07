@@ -28,12 +28,11 @@ body{
     font-weight:800;
     color:#000733;
     font-size:20px;
-    text-align:left;
+    text-alignment:left;
     padding:0 10px;
 }
 .navigationBar{
     display:flex;
-    flex-wrap:wrap;
     justify-content: center;
     align-items:center;
     /*margin-right:12%;*/
@@ -100,7 +99,7 @@ body{
 .content h1{
     font-family:Roboto , Arial , sans-serif;
     font-weight:600;
-    font-size:33px;
+    font-size:2.0625rem;
     text-align:left;
     color:#ffffff;
     letter-spacing:0.015em;
@@ -228,7 +227,7 @@ input[type="time"]::-webkit-calendar-picker-indicator, input[type="date"]::-webk
     background:none;
     z-index:1;
 }
-input[type="time"]:before , input[type="date"]:before{
+input[type="time"]:before , input[type="date"]:after{
     color: transparent;
     background: none;
     display: block;
@@ -527,4 +526,147 @@ input[type="time"]:before , input[type="date"]:before{
   line-height:22px;
   color:#ffffff;
   margin:0 20px;
+}
+
+
+/* Here We're going to design our layout for Mobile and Tablets */
+
+/*  For Tablets  */
+
+@media only screen and (max-width:768px){
+/* Header Section Settings for Tablets*/
+    .header{
+        flex-direction:column;
+    }
+    .logo img{
+        width:8%;}
+    
+    /*End of header section Settings for tablets */
+
+    /******* First Row Setings Here for Tablets  ******/
+    .content{
+            flex:100%;
+        }
+        .ring{
+            width:2rem;
+            height:2rem;
+        }
+        .ring1{
+            top:-16px;
+            left:-16px;
+        }
+        .ring2{
+            top:-16px;
+            right:-16px;
+        }
+        .ring3{
+            bottom:-16px;
+            right:-16px;
+        }
+        .ring4{
+            bottom:-16px;
+            left:-16px;
+        }
+        .bookingForm{
+            flex:100%;
+            margin-bottom:5rem;
+        }
+/* End Of First Row Settings Here for Tablets */
+/* Settings for the Second Row on Tablet */
+.content2{
+    flex:100%;
+}
+.infoBoxes{
+    margin-top:3.125rem;
+    flex:100%;
+}
+/* End of Settings For Row 2 here */
+
+/*Row 3 Settings for Tablets are mentioned Below*/
+
+.content3{
+    flex:100%;
+}
+.fleet{
+    display:flex;
+    flex-direction:column;
+    flex:100%;
+    align-items:center;
+    justify-content: center;
+}
+.navDot{
+    left:42%;
+}
+}
+
+/****  End of Layout FOr Tablets...   ****/
+
+
+/******* Here We get the Layout for Mobile ******/
+
+@media only screen and (max-width:480px){
+/*Header Settings For Mobile */
+
+    .header{
+        position:relative;
+    }
+    .logo{
+        margin-left:-140px;
+    }
+    .logo img{
+        width:10%;
+    }
+    .navigationBar  ul{
+        flex-direction:column;
+        margin-left:-40px;
+    }
+    .navigationBar  ul>li{
+        margin-bottom:0.625rem;
+    }
+    .menu a:hover{
+        border:6px solid #000733;
+        padding:5px;
+    }
+    .account{
+        position:absolute;
+        top:10px;
+        right:-30px;
+    }
+    .home{
+        border:6px solid #000733;
+        padding:5px !important;
+    }
+    /*  End of Header Settings For Mobile */
+
+    /*Section 2 Settings for Mobile */
+    .Row{
+        padding:6% 3%;
+    }
+    .content , .bookingForm , .content2 , .fleet , .infoBoxes , .content3 {
+        flex:100%;
+    }
+    .ring{display:none;}
+    .navDot{
+        left:38%;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .header{
+        position:relative;
+    }
+    .logo{
+        margin-left:-100px;
+    }
+    .account{
+        position:absolute;
+        top:10px;
+        right:-40px;
+    }
+    .logo img{
+        width:10%;
+    }
+    .profilePic{
+        width:20%;
+    }
 }
