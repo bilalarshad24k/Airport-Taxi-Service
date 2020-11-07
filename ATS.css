@@ -79,10 +79,7 @@ body{
 /*------------------------ Styling of first section of page:below Header--------- */
 .Row{
     max-width:100%;
-}
-img{
-    max-width:100%;
-}
+} 
 .Row1{
     margin-top:-3px;
     display:flex;
@@ -356,8 +353,8 @@ input[type="time"]:before , input[type="date"]:after{
 .Row2{width:100%;
         display:flex;
         flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
+        justify-content:space-between;
+        align-items:space-evenly;
         padding:150px 15%;
     }
 .content2{
@@ -365,7 +362,6 @@ input[type="time"]:before , input[type="date"]:after{
     padding:3%;
     position:relative;
     flex-basis:40%;
-   
 }
 .content2 p,.content3 p{
     font-size: 14px;
@@ -394,11 +390,10 @@ input[type="time"]:before , input[type="date"]:after{
     left:-28px;
 }
 .infoBoxes{
-    margin:20px;
     flex-basis:50%;
     display:flex;
     flex-wrap:wrap;
-    gap:15px;
+    gap:50px;
     /*grid-column-gap:30px;
     grid-row-gap:50px;
     grid-template-columns:40% 40%;*/
@@ -406,7 +401,7 @@ input[type="time"]:before , input[type="date"]:after{
     align-items:center;
 }
 .infBox{
-    width:calc(50% - 15px);
+    width:calc(50% - 50px);
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -686,12 +681,11 @@ input[type="time"]:before , input[type="date"]:after{
 /*End of Styling Of Section 2|Row 2*/
 
 /* Styling of Section 3|Row3*/
-.ourFleet{
+
+.ring{display:none;}
+.ourFleet img{
+max-width:100%;
 }
-    .ring{display:none;}
-    .navDot{
-        left:38%;
-    }
 
 /*****  Styling of Footer ******/        
 .footer ul{
@@ -706,4 +700,15 @@ input[type="time"]:before , input[type="date"]:after{
         flex-direction: row;
         justify-content: space-between;
     }
+}
+@media only screen and (max-width:300px){
+
+.buttons{
+    flex-wrap:wrap;
+}
+.loginButton , .qouteButton{
+    padding:10px 15px;
+    margin:10px;
+}
+
 }
