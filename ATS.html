@@ -44,53 +44,67 @@
                 <img class="ring ring2" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
                 <img class="ring ring3" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
                 <img class="ring ring4" src="Media/white ellipse.png" alt="image" width="60px" height="60px">
+                <h2>Book Now</h2>
                 <form>
-                    <h2>Book Now</h2>
-                    <div class="inputBox pickup">
+                    <div class="inputDiv">
+                     <label for="fromLoc">PickUp:</label>
+                      <div class="inputBox pickup">
                         <i class="icon fa fa-map-marker" aria-hidden="true"></i>
-                        <label for="fromLoc">PickUp:</label>
                         <input type="text" class="inputField" id="fromLoc" name="fromLoc" placeholder="PickUp point">
+                      </div>
                     </div>
+                    
                     <div class="inputBox Xchangeholder">
                         <i class="fa fa-exchange icon iconXchange" aria-hidden="true"></i>
                     </div>
-                  
-                    <div class="inputBox dropOff">
-                        <i class="icon fa fa-map-marker" aria-hidden="true"></i>
-                        <label for="toLoc">Destination:</label>
+                    <div class="inputDiv destination">
+                      <label for="toLoc">Destination:</label>
+                      <div class="inputBox dropOff">
+                        <i class="icon fa fa-map-marker" aria-hidden="true"></i>  
                         <input type="text" class="inputField" id="toLoc" name="toLoc" placeholder="Destination point">
-                    </div>
+                      </div>
+                    </div>    
                     <div class="FPL">
-                        <div class="inputBox Fleet">
+                        <div class="inputDiv Fleet">
+                        <label for="fleet">Fleet:</label>
+                        <div class="inputBox">
                             <i class="fa fa-car icon" aria-hidden="true"></i>
-                            <label for="fleet">Fleet:</label>
                             <select class="inputField" name="fleet" id="carFleet">
                             <option value="Economy">Economy</option>
                             <option value="Average">Average</option>
                             <option value="Luxury">Luxury</option>
                             </select>
                         </div>
-                        <div class="inputBox passngr">
-                            <i class="fa fa-user icon" aria-hidden="true"></i>
-                            <label for="passenger">Passengers:</label>
-                            <input class="inputField" type="number"placeholder="0" id="Passngr"name="passenger" min="1" max="5">
                         </div>
-                        <div class="inputBox lugg">
+                        <div class="inputDiv passngr">
+                          <label for="passenger">Passengers:</label>
+                          <div class="inputBox">
+                            <i class="fa fa-user icon" aria-hidden="true"></i> 
+                            <input class="inputField" type="number"placeholder="0" size="1" id="Passngr"name="passenger" min="1" max="5">
+                          </div>
+                        </div>
+                        <div class="inputDiv lugg">
+                          <label for="luggage">Luggage:</label>
+                          <div class="inputBox">
                             <i class="fa fa-suitcase icon" aria-hidden="true"></i>
-                            <label for="luggage">Luggage:</label>
-                            <input class="inputField" placeholder="0" type="number" id="Luggage" name="luggage" min="1" max="30">
+                            <input class="inputField" placeholder="0" type="number" size="2" id="Luggage" name="luggage" min="1" max="30">
+                          </div>
                         </div>
                     </div>
-                    <div class="dateNtime">
-                        <div class="inputBox date">
+                    <div class="dateNtime dNt1">
+                        <div class="inputDiv date">
+                          <label for="date">Date:</label>
+                          <div class="inputBox">
                             <i class="fa fa-calendar icon" aria-hidden="true"></i>
-                            <label for="date">Date:</label>
                             <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                          </div>
                         </div>
-                        <div class="inputBox time">
+                        <div class="inputDiv time">
+                          <label for="time">Time:</label>
+                          <div class="inputBox">
                             <i class="fa fa-clock-o icon" aria-hidden="true"></i>
-                            <label for="time">Time:</label>
                             <input class="inputField" type="time" name="time" value="12:00">
+                          </div>
                         </div>
                     </div>
                     <div class="inputBox switchButton">
@@ -100,16 +114,20 @@
                             <span class="slider"></span>
                           </label>
                     </div>
-                    <div class="dateNtime">
-                        <div class="inputBox date">
+                    <div class="dateNtime dNt2">
+                        <div class="inputDiv date">
+                          <label for="date">Date:</label>
+                          <div class="inputBox">
                             <i class="fa fa-calendar icon" aria-hidden="true"></i>
-                            <label for="date">Date:</label>
                             <input class="inputField" type="date" name="date" value="2020-10-31" min="2020-10-31" max="2090-12-31">
+                          </div>
                         </div>
-                        <div class="inputBox time">
+                        <div class="inputDiv time">
+                          <label for="time">Time:</label>
+                          <div class="inputBox">
                             <i class="fa fa-clock-o icon" aria-hidden="true"></i>
-                            <label for="time">Time:</label>
                             <input class="inputField" type="time" name="time" value="12:00">
+                          </div>
                         </div>
                     </div>
                     <div class="inputBox buttons">
