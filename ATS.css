@@ -228,11 +228,7 @@ input:focus::placeholder{
 .dNt2{
     margin-top:-30px;
 }
-#carFleet{
-    -moz-appearence:none;
-    appearence:none;
-}
-#Passngr, #Luggage  {
+#Passngr, #Luggage  {   /*For making space between spin buttons and numbers */
     padding-right: 2px;
 }
 .date,.time{
@@ -341,6 +337,7 @@ input[type="time"]:before , input[type="date"]:after{
     padding:15px 45px;
     border:none;
     width:50%;
+    cursor:pointer;
     color:white;
     font-family:Roboto,Arial,sans-serif;
     font-size:16px;
